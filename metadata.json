@@ -1,0 +1,6 @@
+{
+  "name": "Lisan ud Dawat & Arabic PDF Reader Dictionary",
+  "description": "PDF reader with instant Arabic & Lisan ud Dawat word lookup, root analysis, grammar, and translations powered by Gemini AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

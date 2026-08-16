@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  .font-serif, .font-arabic {
+    font-family: "Amiri", "Noto Naskh Arabic", "Scheherazade New", "Lateef", serif;
+  }
+}
+
+@layer utilities {
+  /* Text Layer Selection Highlighting */
+  .textLayer ::selection {
+    background: rgba(27, 67, 50, 0.35);
+    color: transparent;
+  }
+
+  .textLayer ::-moz-selection {
+    background: rgba(27, 67, 50, 0.35);
+    color: transparent;
+  }
+
+  /* Custom Scrollbar for PDF Viewport */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 8s linear infinite;
+}
+
+
